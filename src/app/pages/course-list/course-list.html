@@ -1,0 +1,29 @@
+<section class="page-container">
+  <div class="page-heading">
+    <p class="eyebrow">Academic Catalogue</p>
+    <h1>Available Courses</h1>
+    <p>
+      Browse the courses available in the Student Course Portal.
+    </p>
+  </div>
+
+  <div class="course-grid">
+    @for (course of courses; track course.id) {
+      <article class="course-card">
+        <div class="course-code">
+          {{ course.code }}
+        </div>
+
+        <h2>{{ course.name }}</h2>
+
+        <p>
+          Credits: {{ course.credits }}
+        </p>
+
+        <button type="button">
+          View Course
+        </button>
+      </article>
+    }
+  </div>
+</section>

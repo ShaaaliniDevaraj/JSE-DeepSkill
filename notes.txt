@@ -1,0 +1,39 @@
+Angular Student Course Portal - Project Notes
+
+1. angular.json
+Contains workspace-level configuration for building, serving, testing and managing the Angular application.
+
+2. tsconfig.json
+Contains the main TypeScript compiler configuration shared by the Angular project.
+
+3. tsconfig.app.json
+Contains TypeScript compiler settings specifically for the Angular application source code.
+
+4. package.json
+Contains project metadata, npm scripts, dependencies and development dependencies.
+
+5. src/main.ts
+Acts as the application entry point and bootstraps the root Angular application.
+
+6. src/app/app.config.ts
+Contains application-wide providers such as router configuration and other Angular services.
+
+7. src/app/app.component.ts
+Defines the root component of the Angular application.
+
+8. src/index.html
+Provides the main HTML document where Angular inserts and renders the root component.
+
+Production Budget Notes
+
+The budgets configuration in angular.json controls the permitted size of generated application bundles.
+
+maximumWarning:
+Angular displays a warning when the bundle exceeds this size.
+
+maximumError:
+Angular stops the production build with an error when the bundle exceeds this size.
+
+Compiled Application File
+
+After running ng build, the compiled JavaScript application files are generated inside the dist/student-course-portal/browser folder. Files beginning with main contain the compiled application code.

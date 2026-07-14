@@ -1,0 +1,31 @@
+<header class="portal-header">
+  <nav class="navbar">
+    <a class="brand" routerLink="/">
+      Student Course Portal
+    </a>
+
+    <div class="nav-links">
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Home
+      </a>
+
+      <a
+        routerLink="/courses"
+        routerLinkActive="active"
+      >
+        Courses
+      </a>
+
+      <a
+        routerLink="/profile"
+        routerLinkActive="active"
+      >
+        Profile
+      </a>
+    </div>
+  </nav>
+</header>
